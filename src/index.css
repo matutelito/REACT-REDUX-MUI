@@ -1,0 +1,19 @@
+html, body, #root{
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+select:focus{
+  outline:none!important;
+} 
+
+/* .MuiInput-underline:before{
+  border-bottom: none!important;
+}
+.css-oz19hx-MuiInputBase-root-MuiInput-root:after{ 
+  border-bottom: none!important;
+} */
+
