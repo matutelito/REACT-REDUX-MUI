@@ -9,10 +9,10 @@ import Brightness7Icon from '@mui/icons-material/Brightness7';
 import Typography  from "@mui/material/Typography";
 import IconButton from '@mui/material/IconButton';
 import getTheme from '../styles/theme/theme';
-import Input from "../styles/components/input";
-import LateralButtons from "../styles/components/lateralButtons"
-import SelectForm from "../styles/components/select/select";
-import CardEj from "../styles/components/card";
+import Input from "./atoms/input";
+import LateralButtons from "./atoms/lateralButtons"
+import SelectForm from "./atoms/select/select";
+import CardEj from "./atoms/card";
 import imgFer from '../img/fer.jpg';
 
 const App = ()=> { 

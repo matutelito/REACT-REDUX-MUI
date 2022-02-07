@@ -5,7 +5,7 @@
 anidado dentro del componente select  */
 
 
-.MuiPopover-paper{
+  .MuiPopover-paper{
     box-shadow: 0px 10px 10px -10px #3aa4a96c!important;
     color: #3AA3A9!important;
     border: 1px solid #3aa4a95e!important;
@@ -18,14 +18,13 @@ anidado dentro del componente select  */
     margin-left: 2.5%;
     border-radius: 4px;
     border: 1px solid #55cbbf3a!important; 
-    /* background-color: #474e5e!important;   */
-  }
+  } 
   
-  .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper> ul >li{
+   .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper> ul >li{
     width: 95%;
     margin-left: 2.5%;
     border-radius: 4px;  
-  } 
+  }  
   
   .MuiInput-underline:before{
     border-bottom: none!important;
@@ -34,8 +33,8 @@ anidado dentro del componente select  */
   .MuiInput-root:after{ 
     border-bottom: none!important;
     background-color: transparent!important; 
-  }
+  } 
   
   .MuiSelect-standard:focus{
     background-color: transparent!important;
-  }
+  } 
