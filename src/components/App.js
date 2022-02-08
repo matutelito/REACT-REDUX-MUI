@@ -14,9 +14,11 @@ import LateralButtons from "./atoms/lateralButtons"
 import SelectForm from "./atoms/select/select";
 import CardEj from "./atoms/card";
 import imgFer from '../img/fer.jpg';
+import EditText from './pruebas';
 
 const App = ()=> { 
-
+  
+    
   const[themeUser, setThemeUser]= useState('light');   
 
   const theme= getTheme(themeUser)
@@ -26,8 +28,11 @@ const App = ()=> {
     setThemeUser(newMode) 
   } 
 
+  const [text, setText] = useState('Aca se vé lo que vas a escribir') 
+
   return (
     <ThemeProvider theme={theme}>
+
       <Paper sx={{minHeight: '100%'}}>    
         <Container maxWidth="xl">  
           <Grid container> 
@@ -72,6 +77,12 @@ const App = ()=> {
             </Grid>
             <Grid item xs={12} sm={12} md={1} lg={1} xl={1}>  
               <LateralButtons />
+            </Grid>
+            <Grid item xs={12} sm={12} md={1} lg={4} xl={4}>  
+              <Typography variant="h5">{ text }</Typography>
+            </Grid>
+            <Grid item xs={12} sm={12} md={1} lg={4} xl={3}>  
+              <EditText setText={setText} />
             </Grid>
           </Grid>
         </Container> 
