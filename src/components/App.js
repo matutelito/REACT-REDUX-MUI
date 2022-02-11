@@ -15,6 +15,7 @@ import SelectForm from "./atoms/select/select";
 import CardEj from "./atoms/card";
 import imgFer from '../img/fer.jpg';
 import EditText from './pruebas';
+import MyComponent from './hooksPruebas';
 
 const App = ()=> { 
   
@@ -28,7 +29,7 @@ const App = ()=> {
     setThemeUser(newMode) 
   } 
 
-  const [text, setText] = useState('Aca se vé lo que vas a escribir') 
+  const [text, setText] = useState('') 
 
   return (
     <ThemeProvider theme={theme}>
@@ -61,7 +62,7 @@ const App = ()=> {
               <SelectForm mode={theme.palette.mode} />
             </Grid>
             <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-              <Input/>          
+              <input/>          
             </Grid>
           </Grid>
           <Grid container>
@@ -83,6 +84,7 @@ const App = ()=> {
             </Grid>
             <Grid item xs={12} sm={12} md={1} lg={4} xl={3}>  
               <EditText setText={setText} />
+              {/* <MyComponent /> */}
             </Grid>
           </Grid>
         </Container> 

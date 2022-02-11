@@ -1,13 +1,22 @@
 import  InputLabel from "@mui/material/InputLabel";
 import FormControl from '@mui/material/FormControl';
 import Input from '@mui/material/Input'; 
+import './select/select.css'
+
+import { styled } from '@mui/material/styles';
+
+const CustomFormControl = styled(FormControl)(({ theme }) => ({
+  // width: '100%',
+}));
+
+const CustomInputLabel = styled(InputLabel)(({ theme }) => ({
+  // width: '100%',
+}));
+
+const CustomInput = styled(Input)(({ theme }) => ({
+  borderBottom: `1px solid ${theme.palette.secondary.main}`
+  // width: '100%',
+}));
 
 
-export default function TextInput() {   
-  return (
-    <FormControl variant="standard">
-      <InputLabel sx={{color: 'primary.main'}} >Name</InputLabel>
-      <Input id="component-simple" sx={{borderBottom: 1 ,borderColor: 'primary.main'}}/> 
-    </FormControl>
-  );
-}
+export { CustomFormControl, CustomInputLabel, CustomInput };   
