@@ -5,11 +5,11 @@ import {rootReducer} from 'reducers'
 import { createTheme} from '@mui/material/styles';
 
 
-const theme = createTheme({
-    pallete:{
-        type: 'dark'
-    }
-  });
+// const theme = createTheme({
+//     pallete:{
+//         type: 'dark'
+//     }
+//   });
 
 
 

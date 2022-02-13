@@ -10,9 +10,6 @@ import ShareIcon from '@material-ui/icons/Share';
 import {styled} from '@mui/material/styles'
 
 const CustomSpeedDial = styled(SpeedDial)(({ theme }) => ({ 
-  // '& button':{
-  //   // color: '#fff'
-  // }
 }));
 
 const CustomActionDial = styled(SpeedDialAction)(({ theme }) =>({

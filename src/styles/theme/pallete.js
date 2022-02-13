@@ -15,9 +15,9 @@ const darkPallete= {
     contrastText: '#124c4775' 
   },
   secondary:{
-    main: '#fff',
-    ligth: '#fff',
-    dark: '#fff',
+    main: '#55cbc0c7',
+    ligth: '#55cbc0c7',
+    dark: '#55cbc0c7',
   },
   divider: '#FBBC6C',
   text: {

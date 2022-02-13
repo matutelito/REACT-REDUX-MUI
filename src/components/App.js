@@ -56,7 +56,9 @@ const App = ()=> {
           </Grid> 
           <Grid container>  
             <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-              <SelectForm mode={theme.palette.mode} />
+              <SelectForm  />
+              <EditText setText={setText} />
+
             </Grid>
             <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
               <SelectForm mode={theme.palette.mode} />

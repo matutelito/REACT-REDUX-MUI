@@ -48,7 +48,7 @@ const getTheme = (mode)=> {
             marginBottom: '1rem',    
           },
         },
-      },    
+      },
     }, 
   })
 };

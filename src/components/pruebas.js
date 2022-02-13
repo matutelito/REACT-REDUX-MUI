@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
-import { CustomFormControl, CustomInputLabel, CustomInput } from "./atoms/input";
+import CustomInput from "./atoms/input";
 
 
 const EditText = ({setText}) => {
@@ -8,8 +7,7 @@ const EditText = ({setText}) => {
   const [formState, setFormState] = useState('');
 
   const handleInput = (e) => {
-    // setFormState(e.target.value)
-    setText( text => e.target.value) 
+    setText( text => e.target.value)  
   };
 
   const handleSubmit = (e) => {
@@ -20,30 +18,14 @@ const EditText = ({setText}) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <CustomFormControl color="primary" variant="standard">
-          <CustomInputLabel
-            name="name"
-            text="nombre"
-            value="hola"
-          >
-            hola
-          </CustomInputLabel>  
-
-          <CustomInput
-          color="primary" 
-            onChange={handleInput} 
-            type="text"
-            > 
-          </CustomInput>
-        </CustomFormControl>
+        <CustomInput
+          label="name..."
+          variant='standard'
+        >
+        </CustomInput> 
       </form> 
     </>
   );
-
 };
 
-// EditText.propTypes = {
-
-// };
-
-export default EditText;  
+export default EditText;   
