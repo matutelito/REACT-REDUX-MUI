@@ -16,6 +16,7 @@ import CardEj from "./atoms/card";
 import imgFer from '../img/fer.jpg';
 import EditText from './pruebas';
 import MyComponent from './hooksPruebas';
+import FormUser from "./organisms/formUser";
 
 const App = ()=> { 
   
@@ -35,10 +36,10 @@ const App = ()=> {
     <ThemeProvider theme={theme}>
 
       <Paper sx={{minHeight: '100%'}}>    
-        <Container maxWidth="xl">  
+        <Container sx={{pt: 8}}>    
           <Grid container> 
             <Grid item xs={11} sm={11} md={10} lg={10} xl={10}>
-              <Typography variant="h2" color="primary">Esto es in titulo h1 </Typography >
+              <Typography mb={8} variant="h2" color="primary">Completá el siguiente formulario </Typography >
             </Grid>
             <Grid item xs={1} sm={1} md={2} lg={2} xl={2}> 
               <IconButton
@@ -54,7 +55,7 @@ const App = ()=> {
               </IconButton>
             </Grid>
           </Grid> 
-          <Grid container>  
+          {/* <Grid container>  
             <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
               <SelectForm  />
               <EditText setText={setText} />
@@ -66,9 +67,10 @@ const App = ()=> {
             <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
               <input/>          
             </Grid>
-          </Grid>
-          <Grid container>
-            <Grid item xs={12} sm={6} md={3} lg={4} xl={4}>
+          </Grid> */}
+          <Grid container sx={{width: '50%', justifyContent: 'center', flexDirection: 'column'}}>
+            <FormUser /> 
+            {/* <Grid item xs={12} sm={6} md={3} lg={4} xl={4}>
               <CardEj 
                 legend={`El coaching es una forma de desarrollo personal en la cual 
                 una persona con experiencia, llamada coach, apoya a un alumno o 
@@ -77,8 +79,8 @@ const App = ()=> {
                 tittle= {"Coahchin Ontologico"} 
                 img={imgFer}    
               />
-            </Grid>
-            <Grid item xs={12} sm={12} md={1} lg={1} xl={1}>  
+            </Grid> */}
+            {/* <Grid item xs={12} sm={12} md={1} lg={1} xl={1}>  
               <LateralButtons />
             </Grid>
             <Grid item xs={12} sm={12} md={1} lg={4} xl={4}>  
@@ -86,8 +88,8 @@ const App = ()=> {
             </Grid>
             <Grid item xs={12} sm={12} md={1} lg={4} xl={3}>  
               <EditText setText={setText} />
-              {/* <MyComponent /> */}
-            </Grid>
+              { <MyComponent />}
+            </Grid> */}
           </Grid>
         </Container> 
       </Paper> 

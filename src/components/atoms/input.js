@@ -2,6 +2,7 @@ import { TextField } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 const CustomInput = styled(TextField)(({theme}) => ({
+  marginTop: '25px',
   '& .MuiInput-underline:before': {
     borderBottom: `1px solid ${theme.palette.primary.main}`
   },
