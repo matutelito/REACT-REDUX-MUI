@@ -4,13 +4,13 @@ const useForm = (initialState = {}) => {
   
 	const [state, setState] = useState(initialState); 
 
-	// useEffect( () => { 
+	useEffect( () => { 
 
-	// 	return(
-	// 		console.log(`componente desmontado`)
-	// 	)
+		return(
+			console.log(`componente desmontado`)
+		)
 
-	// }, [])
+	}, [])
 
 	const handleInputChange = (e) => {
 		setState({
